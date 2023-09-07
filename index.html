@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Estilo.css" media="screen">
+    <title>Site de Desenvolvimento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 300px;
+            border-collapse: collapse;
+        }
+        tr.linha{
+            background-color: #088A85;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.coluna{
+         background-color: #E6E6E6;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="App.js"></script>
+    <h1>Seja Bem-Vindo!</h1> 
+    <br>
+    <h2>Este site foi criado com o intuito de desmontrar
+        <p> minhas softs e hards skill em programação.</p></h2>
+        <br>
+    <table>
+        <tr class="linha">
+        <td><strong>Produto</strong></td>
+        <td><strong>Tipo</strong></td>
+        <td><strong>Valor</strong></td>
+        </tr>
+        <tr>
+            <td class="coluna">Maçã</td>
+            <td class="coluna">Fruta</td>
+            <td class="coluna">2,50</td>
+        </tr>
+        <tr>
+            <td class="coluna">Arroz</td>
+            <td class="coluna">Não Perecível</td>
+            <td class="coluna">10,0</tr>
+        </tr>
+        <tr>
+            <td class="coluna">Coca-Cola</td>
+            <td class="coluna">Refrigerante</td>
+            <td class="coluna">7,99</td>
+        </tr>
+    </table>
+    <br>
+    <div>
+        <h3 id="titulo">Cadastro de Informações</h3>
+        <br>
+        <p id="subtitulo"><strong>Digite suas Informações:</strong></p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class-="campo">
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label><strong>Qual sexo você se indentifica?</strong></label>
+            <input type="radio" name="sexo" value="masculino" checked> Masculino
+            <label>
+                <input type="radio" name="sexo" value="feminino"> Feminino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="outros"> Outros
+            </label>
+        </div>
+        <br>
+        <div class-="campo">
+            <label for="estado"><strong>Qual estado você mora?</strong></label>
+            <select id="estado">
+                <option selected disabled value="">Selecione</option>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Mato Grosso</option>
+                <option>Curitiba</option>
+            </select>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que você mais ultiliza:</strong></label>
+                <input type="checkbox" name="tecnologia1" id="tecnologia1" value="Computador">
+                <label for="tecnologia1">Computador</label>
+                <input type="checkbox" name="tecnologia2" id="tecnologia2" value="Celular">
+                <label for="tecnologia2">Celular</label>
+                <input type="checkbox" name="tecnologia3" id="tecnologia3" value="Tablet">
+                <label for="tecnologia3">Tablet</label>
+                <input type="checkbox" name="tecnologia4" id="tecnologia4" value="">
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label><strong>Conte sobre suas experiências:</strong></label>
+            <textarea name="texto" id="texto" cols="30" rows="6" style="width: 26em;"></textarea>
+        </div>
+
+        <a href="segundo.html" class="btn" id="btn">Concluído!</a>
+
+    </form>
+</body>
+</html>
