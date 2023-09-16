@@ -1,0 +1,21 @@
+body{
+    background-color:black;
+    font-family: sans-serif;
+    font-size: 1em;
+    color:white;
+}
+
+
+h1{
+    color:yellow;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+h2{
+    color:white;
+    margin-left: 20%;
+    margin-top: 2%;
+    justify-content: center;
+}
